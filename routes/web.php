@@ -22,6 +22,7 @@ Route::get('/home',[homeController::class,'redirect']);
 Route::get('/',[homeController::class,'index']);
 Route::get('/add_doctor',[AdminController::class,'addview']);
 Route::post('/upload_doctor',[AdminController::class,'upload']);
+Route::post('/appointment',[HomeController::class,'appointment']);
 
 
 
