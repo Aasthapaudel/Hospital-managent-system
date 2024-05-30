@@ -21,6 +21,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/home',[homeController::class,'redirect']);
 Route::get('/',[homeController::class,'index']);
 Route::get('/add_doctor',[AdminController::class,'addview']);
+Route::get('/adminhome',[AdminController::class,'index']);
 Route::post('/upload_doctor',[AdminController::class,'upload']);
 Route::post('/appointment',[HomeController::class,'appointment']);
 Route::get('/doctor',[HomeController::class,'doctor']);

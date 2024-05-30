@@ -9,6 +9,9 @@ use App\Models\Doctor;
 class AdminController extends Controller
 {
     //
+    public function index(){
+        return view('admin.home');
+    }
     public function addview()
     {
         return view('admin.add_doctor');
@@ -31,4 +34,5 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Doctor Added Successfully');
         // return view('admin.upload_doctor');
     }
+    
 }

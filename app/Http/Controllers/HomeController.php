@@ -62,7 +62,8 @@ class HomeController extends Controller
         return redirect()->back()->with('message','Appointment Request Successful. We will contact you soon!');
     }
     public function doctor(){
-        return view('user.doctor');
+        $doctor=Doctor::all();
+        return view('user.doctor',compact('doctor'));
     }
     public function about(){
         return view('user.about');
