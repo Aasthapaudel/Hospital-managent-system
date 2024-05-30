@@ -20,6 +20,60 @@
     <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
     <link rel="stylesheet" href="../assets/css/theme.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .content {
+            flex: 1;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer h5 {
+            margin-top: 0;
+            color: #333;
+        }
+        .footer .footer-link {
+            display: block;
+            margin-bottom: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer .footer-link:hover {
+            text-decoration: underline;
+        }
+        .footer .footer-sosmed a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 24px; /* Adjust icon size */
+        }
+        .footer .footer-sosmed a:hover {
+            color: #007bff;
+        }
+        hr {
+            border-top: 1px solid #dee2e6;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-sm-6 {
+            max-width: 300px;
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>

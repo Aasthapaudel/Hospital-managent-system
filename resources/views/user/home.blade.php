@@ -75,16 +75,16 @@
                             <a class="nav-link" href="{{url('/home')}}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/home')}}">About Us</a>
+                            <a class="nav-link" href="{{url('/about')}}">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/home')}}">Doctors</a>
+                            <a class="nav-link" href="{{url('/doctor')}}">Doctors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/home')}}">News</a>
+                            <a class="nav-link" href="{{url('/latest')}}">News</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/home')}}">Contact</a>
+                            <a class="nav-link" href="{{url('/contact')}}">Contact</a>
                         </li>
                         @if(Route::has('login'))
                         @auth
@@ -183,12 +183,12 @@
         </div> <!-- .bg-light -->
     </div> <!-- .bg-light -->
 
-    @include('user.doctor')
+    {{-- @include('user.doctor')
 
   <!-- .page-section -->
 @include('user.latest')
 
-@include('user.appointment')
+@include('user.appointment') --}}
 
 
      <!-- .page-section -->

@@ -83,4 +83,6 @@
             </div>
         </div>
     </div>
-    <x-footer/>
+    <div class="footer">
+        <x-footer/>
+    </div>

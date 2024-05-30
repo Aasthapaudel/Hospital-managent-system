@@ -65,4 +65,6 @@
     </div> <!-- .bg-light -->
 </div> <!-- .bg-light -->
 
-  <x-footer/>
+<div class="footer">
+    <x-footer/>
+</div>
