@@ -61,5 +61,17 @@ class HomeController extends Controller
         $data->save();
         return redirect()->back()->with('message','Appointment Request Successful. We will contact you soon!');
     }
+    public function doctor(){
+        return view('user.doctor');
+    }
+    public function about(){
+        return view('user.about');
+    }
+    public function contact(){
+        return view('user.contact');
+    }
+    public function latest(){
+        return view('user.latest');
+    }
 }
 

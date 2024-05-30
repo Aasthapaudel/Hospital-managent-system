@@ -1,3 +1,4 @@
+<x-header/>
 
 <div class="page-section bg-light">
         <div class="container">
@@ -85,4 +86,4 @@
 
             </div>
         </div>
-   
+        <x-footer/>
