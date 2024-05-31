@@ -25,9 +25,10 @@ Route::get('/adminhome',[AdminController::class,'index'])->middleware('auth');
 Route::post('/upload_doctor',[AdminController::class,'upload'])->middleware('auth');
 Route::post('/appointment',[HomeController::class,'appointment'])->middleware('auth');
 Route::get('/getappointment',[HomeController::class,'getappointment'])->middleware('auth');
+Route::get('/showappointment',[HomeController::class,'showappointment'])->middleware('auth');
 Route::get('/doctor',[HomeController::class,'doctor'])->middleware('auth');
 Route::get('/latest',[HomeController::class,'latest'])->middleware('auth');
-Route::get('/contact',[HomeController::class,'contact'])->middleware('auth');
+Route::get('/contact',[HomeController::class,'contact']);
 Route::get('/about',[HomeController::class,'about']);
 
 

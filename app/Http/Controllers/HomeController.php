@@ -79,5 +79,10 @@ class HomeController extends Controller
 
         return view('user.getappointment',compact('doctor'));
     }
+    public function showappointment(){
+        $appointments = Appointment::where('user_id', Auth::id())->get();
+
+        return view('user.showappointment',compact('appointments'));
+    }
 }
 
