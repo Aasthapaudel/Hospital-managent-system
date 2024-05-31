@@ -88,10 +88,12 @@
                         </li>
                         @if(Route::has('login'))
                         @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/doctor')}}">Appointment list</a>
+                        </li>
                         <x-app-layout>
                         </x-app-layout>
 
-                        <h1>user is logged in !</h1>
                         @else
                         <li class="nav-item">
                             <a class="btn btn-primary ml-lg-3" href="{{route('login')}}">Login</a>
@@ -123,7 +125,7 @@
             <div class="container text-center wow zoomIn">
                 <span class="subhead">Let's make your life happier</span>
                 <h1 class="display-4">Healthy Living</h1>
-                <a href="#" class="btn btn-primary">Let's Consult</a>
+                <a href="{{url('getappointment')}}" class="btn btn-primary">Let's Consult</a>
             </div>
         </div>
     </div>
@@ -188,7 +190,7 @@
   <!-- .page-section -->
 {{-- @include('user.latest') --}}
 
-@include('user.appointment') 
+@include('user.appointment')
 
 
      <!-- .page-section -->

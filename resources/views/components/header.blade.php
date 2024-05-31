@@ -142,10 +142,12 @@
                         </li>
                         @if(Route::has('login'))
                         @auth
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/doctor')}}">Appointment list</a>
+                        </li>
                         <x-app-layout>
                         </x-app-layout>
 
-                        <h1>user is logged in !</h1>
                         @else
                         <li class="nav-item">
                             <a class="btn btn-primary ml-lg-3" href="{{route('login')}}">Login</a>

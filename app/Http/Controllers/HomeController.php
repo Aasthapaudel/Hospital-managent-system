@@ -74,5 +74,10 @@ class HomeController extends Controller
     public function latest(){
         return view('user.latest');
     }
+    public function getappointment(){
+        $doctor=Doctor::all();
+
+        return view('user.getappointment',compact('doctor'));
+    }
 }
 
