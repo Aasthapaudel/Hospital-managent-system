@@ -186,9 +186,9 @@
     {{-- @include('user.doctor')
 
   <!-- .page-section -->
-@include('user.latest')
+{{-- @include('user.latest') --}}
 
-@include('user.appointment') --}}
+@include('user.appointment') 
 
 
      <!-- .page-section -->
