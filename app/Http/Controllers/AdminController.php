@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     //
     public function index(){
-        return view('admin.home');
+        return view('admin.adminhome');
     }
     public function addview()
     {
@@ -34,5 +34,5 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Doctor Added Successfully');
         // return view('admin.upload_doctor');
     }
-    
+
 }

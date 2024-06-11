@@ -19,11 +19,12 @@ class HomeController extends Controller
             {
                 $doctor=doctor::all();
                 return view('user.home',compact('doctor'));
+
             }
             else
             {
-                return view('admin.home');
-            }
+                $doctor=doctor::all();
+                return view('user.home',compact('doctor'));            }
         }
         else{
             return redirect()->back();
