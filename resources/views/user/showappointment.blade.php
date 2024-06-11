@@ -22,6 +22,8 @@
                 <th>Doctor</th>
                 <th>Number</th>
                 <th>Message</th>
+                <th>Status</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -34,6 +36,12 @@
                     <td>{{ $appointment->doctor }}</td>
                     <td>{{ $appointment->phone }}</td>
                     <td>{{ $appointment->message }}</td>
+                    <td >{{ $appointment->status }}</td>
+                    <td >
+                        <form action="" method="post">
+                            <button type="submit" class="btn btn-danger">Cancel</button>
+                        </form>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
