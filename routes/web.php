@@ -27,8 +27,8 @@ Route::post('/appointment',[HomeController::class,'appointment'])->middleware('a
 Route::get('/getappointment',[HomeController::class,'getappointment'])->middleware('auth');
 Route::get('/showappointment',[HomeController::class,'showappointment'])->middleware('auth');
 Route::get('/show_appointment',[AdminController::class,'appointment'])->middleware('auth','IsAdmin');
-Route::post('approve/{$id}',[AdminController::class,'approve'])->middleware('auth','IsAdmin');
-Route::post('cancel/{$id}',[AdminController::class,'cancel'])->middleware('auth','IsAdmin');
+Route::post('approve/{id}',[AdminController::class,'approve'])->name('approve')->middleware('auth','IsAdmin');
+Route::post('cancel/{id}',[AdminController::class,'cancel'])->name('cancel')->middleware('auth','IsAdmin');
 Route::get('/doctor',[HomeController::class,'doctor'])->middleware('auth');
 Route::get('/latest',[HomeController::class,'latest'])->middleware('auth');
 Route::get('/contact',[HomeController::class,'contact']);

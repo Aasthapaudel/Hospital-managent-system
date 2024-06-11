@@ -62,13 +62,12 @@
                                     <td>{{ $appointment->status }}</td>
                                     <td>{{ $appointment->user_id }}</td>
                                     <td>
-                                        <form action="" method="POST" style="display:inline;">
+                                        <form action="{{route('approve',$appointment->id)}}" method="POST" style="display:inline;">
                                             @csrf
                                             <button type="submit" class="btn btn-success btn-sm">Approve</button>
                                         </form>
-                                        <form action=" " method="POST" style="display:inline;">
+                                        <form action=" {{route('cancel',$appointment->id)}}" method="POST" style="display:inline;">
                                             @csrf
-                                            @method('DELETE')
                                             <button type="submit" class="btn btn-danger btn-sm">Cancel</button>
                                         </form>
                                     </td>
