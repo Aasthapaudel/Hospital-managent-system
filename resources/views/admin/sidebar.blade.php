@@ -71,5 +71,14 @@
             <!-- <span class="menu-title">Documentation</span> -->
             </a>
           </li>
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="{{url('show_appointment')}}">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <span class="menu-title">Show Appointment</span>
+            <!-- <span class="menu-title">Documentation</span> -->
+            </a>
+          </li>
         </ul>
       </nav>
