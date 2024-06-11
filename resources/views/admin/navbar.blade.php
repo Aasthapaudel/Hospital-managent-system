@@ -7,7 +7,7 @@
         </div>
         <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="mdi mdi-menu"></span>
+                {{-- <span class="mdi mdi-menu"></span> --}}
             </button>
             <ul class="navbar-nav w-100">
                 <li class="nav-item w-100">
@@ -18,8 +18,8 @@
             </ul>
             <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item dropdown d-none d-lg-block">
-                    <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown"
-                        data-bs-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+                    <a class="" id="createbuttonDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false" href="#"></a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                         aria-labelledby="createbuttonDropdown">
                         <h6 class="p-3 mb-0">Projects</h6>
@@ -127,7 +127,7 @@
                                     <i class="mdi mdi-calendar text-success"></i>
                                 </div>
                             </div>
-                            <div class="preview-item-content">
+                            <div class="">
                                 <p class="preview-subject mb-1">Event today</p>
                                 <p class="text-muted ellipsis mb-0"> Just a reminder that you have an event today </p>
                             </div>
