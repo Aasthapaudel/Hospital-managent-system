@@ -29,6 +29,7 @@ Route::get('/showappointment',[HomeController::class,'showappointment'])->middle
 Route::get('/show_appointment',[AdminController::class,'appointment'])->middleware('auth','IsAdmin');
 Route::post('approve/{id}',[AdminController::class,'approve'])->name('approve')->middleware('auth','IsAdmin');
 Route::post('cancel/{id}',[AdminController::class,'cancel'])->name('cancel')->middleware('auth','IsAdmin');
+Route::get('/doctorshow',[AdminController::class,'doctorshow'])->middleware('auth','IsAdmin');
 Route::get('/doctor',[HomeController::class,'doctor'])->middleware('auth');
 Route::get('/latest',[HomeController::class,'latest'])->middleware('auth');
 Route::get('/contact',[HomeController::class,'contact']);

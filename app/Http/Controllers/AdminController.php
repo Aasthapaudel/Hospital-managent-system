@@ -35,7 +35,7 @@ class AdminController extends Controller
         return redirect()->back()->with('message','Doctor Added Successfully');
         // return view('admin.upload_doctor');
     }
-  
+
 
    public function appointment()
     {
@@ -65,6 +65,10 @@ class AdminController extends Controller
         } else {
             return redirect()->back()->with('error', 'Appointment not found');
         }
+    }
+    public function doctorshow(){
+        $doctors=Doctor::all();
+        return view('admin.doctorshow',compact('doctors'));
     }
 }
 
