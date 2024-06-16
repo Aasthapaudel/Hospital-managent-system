@@ -244,9 +244,10 @@
                 </div>
                 <div class="col-sm-6 col-lg-3 py-3">
                     <h5>Contact</h5>
-                    <p class="footer-link mt-2">351 Willow Street Franklin, MA 02038</p>
-                    <a href="#" class="footer-link">701-573-7582</a>
-                    <a href="#" class="footer-link">healthcare@temporary.net</a>
+                    <p class="footer-link mt-2">Pokhara, Nepal</p>
+                    <a href="tel:7015737582"><span class="mai-call text-primary"></span> +00 123 4455 6666</a>
+                    <span class="divider">|</span>
+                    <a href="mailto:Healthcare@gmail.com"><span class="mai-mail text-primary"></span> Healthcare@gmail.com</a>
 
                     <h5 class="mt-3">Social Media</h5>
                     <div class="footer-sosmed mt-3">
@@ -262,7 +263,7 @@
             <hr>
 
             <p id="copyright">Copyright &copy; 2024 <a href="https://macodeid.com/" target="_blank">Aasthapaudel</a>. All right reserved</p>
-            
+
         </div>
     </footer>
 

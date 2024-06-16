@@ -41,7 +41,7 @@
                             <tr>
                                 <th class="menu-title">ID</th>
                                 <th class="menu-title">Name</th>
-                                <th>Phone</th>
+                                <th class="menu-title">Phone</th>
                                 <th>Speciality</th>
                                 <th>Room</th>
                                 <th>Image</th>
