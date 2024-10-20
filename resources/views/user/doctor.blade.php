@@ -90,7 +90,7 @@
                             <img src="{{asset('storage/'.$doctor->image)}}" alt="pic">
                             <div class="meta">
                                 <a href="#"><span class="mai-call"></span></a>
-                                <a href="#"><span class="mai-logo-whatsapp"></span></a>
+                                <a href="mailto:"><span class="mai-logo-whatsapp"></span></a>
                             </div>
                         </div>
 
